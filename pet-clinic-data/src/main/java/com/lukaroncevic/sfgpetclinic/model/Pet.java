@@ -1,5 +1,7 @@
 package com.lukaroncevic.sfgpetclinic.model;
 
+import org.springframework.cglib.core.Local;
+
 import java.time.LocalDate;
 
 public class Pet {
@@ -8,7 +10,7 @@ public class Pet {
     private Owner owner;
     private LocalDate birthDate;
 
-    public String getPetType(){
+    public PetType getPetType(){
         return petType;
     }
 
@@ -16,7 +18,7 @@ public class Pet {
         this.petType = petType;
     }
 
-    public String getOwner(){
+    public Owner getOwner(){
         return owner;
     }
 
@@ -24,7 +26,7 @@ public class Pet {
         this.owner = owner;
     }
 
-    public String getBirthDate(){
+    public LocalDate getBirthDate(){
         return birthDate;
     }
 
