@@ -4,7 +4,7 @@ import com.lukaroncevic.sfgpetclinic.model.Vet;
 
 import java.util.Set;
 
-public class VetService {
+public interface VetService {
     Vet findByID(Long Id);
 
     Vet save(Vet vet);
