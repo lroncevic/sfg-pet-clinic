@@ -1,5 +1,14 @@
+com/lukaroncevic/sfgpetclinic/services/map/VetServiceMap.class
+com/lukaroncevic/sfgpetclinic/model/Pet.class
+com/lukaroncevic/sfgpetclinic/services/map/AbstractMapService.class
+com/lukaroncevic/sfgpetclinic/model/BaseEntity.class
+com/lukaroncevic/sfgpetclinic/model/PetType.class
+com/lukaroncevic/sfgpetclinic/services/PetService.class
+com/lukaroncevic/sfgpetclinic/services/map/PetServiceMap.class
+com/lukaroncevic/sfgpetclinic/services/VetService.class
+com/lukaroncevic/sfgpetclinic/services/map/OwnerServiceMap.class
+com/lukaroncevic/sfgpetclinic/services/OwnerService.class
+com/lukaroncevic/sfgpetclinic/model/Person.class
+com/lukaroncevic/sfgpetclinic/services/CrudService.class
 com/lukaroncevic/sfgpetclinic/model/Owner.class
 com/lukaroncevic/sfgpetclinic/model/Vet.class
-com/lukaroncevic/sfgpetclinic/model/Pet.class
-com/lukaroncevic/sfgpetclinic/model/Person.class
-com/lukaroncevic/sfgpetclinic/model/PetType.class

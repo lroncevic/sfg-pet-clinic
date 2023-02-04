@@ -1,5 +1,14 @@
-/Users/luka/Documents/java/sfg-pet-clinic/pet-clinic-data/src/main/java/com/lukaroncevic/sfgpetclinic/model/PetType.java
+/Users/luka/Documents/java/sfg-pet-clinic/pet-clinic-data/src/main/java/com/lukaroncevic/sfgpetclinic/services/CrudService.java
 /Users/luka/Documents/java/sfg-pet-clinic/pet-clinic-data/src/main/java/com/lukaroncevic/sfgpetclinic/model/Pet.java
+/Users/luka/Documents/java/sfg-pet-clinic/pet-clinic-data/src/main/java/com/lukaroncevic/sfgpetclinic/services/map/VetServiceMap.java
+/Users/luka/Documents/java/sfg-pet-clinic/pet-clinic-data/src/main/java/com/lukaroncevic/sfgpetclinic/services/map/PetServiceMap.java
+/Users/luka/Documents/java/sfg-pet-clinic/pet-clinic-data/src/main/java/com/lukaroncevic/sfgpetclinic/services/PetService.java
 /Users/luka/Documents/java/sfg-pet-clinic/pet-clinic-data/src/main/java/com/lukaroncevic/sfgpetclinic/model/Owner.java
-/Users/luka/Documents/java/sfg-pet-clinic/pet-clinic-data/src/main/java/com/lukaroncevic/sfgpetclinic/model/Person.java
+/Users/luka/Documents/java/sfg-pet-clinic/pet-clinic-data/src/main/java/com/lukaroncevic/sfgpetclinic/services/OwnerService.java
+/Users/luka/Documents/java/sfg-pet-clinic/pet-clinic-data/src/main/java/com/lukaroncevic/sfgpetclinic/model/BaseEntity.java
+/Users/luka/Documents/java/sfg-pet-clinic/pet-clinic-data/src/main/java/com/lukaroncevic/sfgpetclinic/services/map/AbstractMapService.java
 /Users/luka/Documents/java/sfg-pet-clinic/pet-clinic-data/src/main/java/com/lukaroncevic/sfgpetclinic/model/Vet.java
+/Users/luka/Documents/java/sfg-pet-clinic/pet-clinic-data/src/main/java/com/lukaroncevic/sfgpetclinic/model/PetType.java
+/Users/luka/Documents/java/sfg-pet-clinic/pet-clinic-data/src/main/java/com/lukaroncevic/sfgpetclinic/services/VetService.java
+/Users/luka/Documents/java/sfg-pet-clinic/pet-clinic-data/src/main/java/com/lukaroncevic/sfgpetclinic/services/map/OwnerServiceMap.java
+/Users/luka/Documents/java/sfg-pet-clinic/pet-clinic-data/src/main/java/com/lukaroncevic/sfgpetclinic/model/Person.java
