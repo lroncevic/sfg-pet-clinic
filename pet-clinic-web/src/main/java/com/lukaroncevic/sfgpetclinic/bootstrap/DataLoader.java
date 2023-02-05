@@ -36,8 +36,6 @@ public class DataLoader implements CommandLineRunner {
         }
     }
 
-
-
     private void loadData() {
         PetType dog = new PetType();
         dog.setName("Dog");
