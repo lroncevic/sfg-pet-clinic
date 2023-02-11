@@ -12,9 +12,9 @@ public class Visit extends BaseEntity{
     private LocalDate date;
     @Column(name = "description")
     private String description;
-
-    @ManyToOne
-    @JoinColumn(name = "ped_id")
+    
+    @ManyToOne(cascade = CascadeType.PERSIST)
+    @JoinColumn(name = "pet")
     private Pet pet;
 
     public LocalDate getDate() {
