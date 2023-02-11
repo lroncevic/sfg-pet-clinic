@@ -2,22 +2,20 @@ package com.lukaroncevic.sfgpetclinic.services.map;
 
 import com.lukaroncevic.sfgpetclinic.model.Owner;
 import com.lukaroncevic.sfgpetclinic.model.Pet;
-import com.lukaroncevic.sfgpetclinic.model.PetType;
 import com.lukaroncevic.sfgpetclinic.services.OwnerService;
 import com.lukaroncevic.sfgpetclinic.services.PetService;
 import com.lukaroncevic.sfgpetclinic.services.PetTypeService;
 import org.springframework.stereotype.Service;
 
-import javax.print.attribute.standard.RequestingUserName;
 import java.util.Set;
 
 @Service
-public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
+public class OwnerMapService extends AbstractMapService<Owner, Long> implements OwnerService {
 
     private final PetTypeService petTypeService;
     private final PetService petService;
 
-    public OwnerServiceMap(PetTypeService petTypeService, PetService petService) {
+    public OwnerMapService(PetTypeService petTypeService, PetService petService) {
         this.petTypeService = petTypeService;
         this.petService = petService;
     }
