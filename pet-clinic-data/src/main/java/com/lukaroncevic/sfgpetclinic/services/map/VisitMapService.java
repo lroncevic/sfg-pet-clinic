@@ -2,9 +2,11 @@ package com.lukaroncevic.sfgpetclinic.services.map;
 
 import com.lukaroncevic.sfgpetclinic.model.Visit;
 import com.lukaroncevic.sfgpetclinic.services.VisitService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class VisitMapService extends AbstractMapService<Visit, Long> implements VisitService {
 
     @Override
@@ -23,7 +25,7 @@ public class VisitMapService extends AbstractMapService<Visit, Long> implements 
             || visit.getPet().getOwner() == null){
             throw new RuntimeException("Invalid Visit");
         }
-        return super.save(visit)
+        return super.save(visit);
     }
 
     @Override
