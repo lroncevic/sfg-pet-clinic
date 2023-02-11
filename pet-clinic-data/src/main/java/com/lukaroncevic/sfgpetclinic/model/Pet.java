@@ -1,7 +1,6 @@
 package com.lukaroncevic.sfgpetclinic.model;
 
 import jakarta.persistence.*;
-import org.springframework.cglib.core.Local;
 
 import java.time.LocalDate;
 
