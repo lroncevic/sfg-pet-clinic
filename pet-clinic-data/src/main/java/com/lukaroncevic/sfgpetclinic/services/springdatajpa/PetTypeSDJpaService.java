@@ -1,7 +1,6 @@
 package com.lukaroncevic.sfgpetclinic.services.springdatajpa;
 
 import com.lukaroncevic.sfgpetclinic.model.PetType;
-import com.lukaroncevic.sfgpetclinic.model.Vet;
 import com.lukaroncevic.sfgpetclinic.repositories.PetTypeRepository;
 import com.lukaroncevic.sfgpetclinic.services.PetTypeService;
 import org.springframework.context.annotation.Profile;
