@@ -3,7 +3,6 @@ package com.lukaroncevic.sfgpetclinic.services.map;
 import com.lukaroncevic.sfgpetclinic.model.Owner;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.springframework.test.web.reactive.server.WebTestClient;
 
 import java.util.Set;
 
@@ -33,7 +32,7 @@ class OwnerMapServiceTest {
 
     @Test
     void findByID() {
-        Owner owner = ownerMapService.findByID(ownerId);
+        Owner owner = ownerMapService.findById(ownerId);
 
         assertEquals(1L, owner.getId());
     }
@@ -59,7 +58,7 @@ class OwnerMapServiceTest {
 
     @Test
     void delete() {
-        ownerMapService.delete(ownerMapService.findByID(ownerId));
+        ownerMapService.delete(ownerMapService.findById(ownerId));
 
         assertEquals(0, ownerMapService.findAll().size());
     }

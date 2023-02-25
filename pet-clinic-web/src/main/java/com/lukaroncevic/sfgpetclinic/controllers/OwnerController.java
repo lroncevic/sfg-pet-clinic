@@ -72,7 +72,7 @@ public class OwnerController {
     @GetMapping("/{ownerId}")
     public ModelAndView showOwner(@PathVariable Long ownerId){
         ModelAndView mav = new ModelAndView("owners/ownersDetails");
-        mav.addObject(ownerService.findByID(ownerId));
+        mav.addObject(ownerService.findById(ownerId));
         return mav;
     }
 
@@ -94,7 +94,7 @@ public class OwnerController {
 
     @GetMapping("/{ownerId}/edit")
     public String initUpdateOwnerForm(@PathVariable Long ownerId, Model model) {
-        model.addAttribute(ownerService.findByID(ownerId));
+        model.addAttribute(ownerService.findById(ownerId));
         return VIEWS_OWNER_CREATE_OR_UPDATE_FORM;
     }
 

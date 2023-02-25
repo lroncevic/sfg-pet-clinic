@@ -59,7 +59,7 @@ class OwnerSDJpaServiceTest {
     void findByID() {
         when(ownerRepository.findById(anyLong())).thenReturn(Optional.of(returnOwner));
 
-        Owner owner = service.findByID(1L);
+        Owner owner = service.findById(1L);
 
         assertNotNull(owner);
     }
@@ -68,7 +68,7 @@ class OwnerSDJpaServiceTest {
     void findByIDNotFound() {
         when(ownerRepository.findById(anyLong())).thenReturn(Optional.empty());
 
-        Owner owner = service.findByID(1L);
+        Owner owner = service.findById(1L);
 
         assertNull(owner);
     }
