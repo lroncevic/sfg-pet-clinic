@@ -70,6 +70,7 @@ public class DataLoader implements CommandLineRunner {
         mikesPet.setBirthDate(LocalDate.now());
         mikesPet.setName("Rosco");
         owner1.getPets().add(mikesPet);
+        ownerService.save(owner1);
 
         Owner owner2 = new Owner();
         owner2.setFirstName("Fiona");
@@ -79,13 +80,13 @@ public class DataLoader implements CommandLineRunner {
         owner2.setTelephone("123123123");
         ownerService.save(owner2);
 
-
         Pet fionasPet = new Pet();
         fionasPet.setPetType(savedCatPetType);
         fionasPet.setOwner(owner2);
         fionasPet.setBirthDate(LocalDate.now());
         fionasPet.setName("Cat");
         owner2.getPets().add(fionasPet);
+        ownerService.save(owner2);
 
         Visit catVisit = new Visit();
         catVisit.setPet(fionasPet);
@@ -105,7 +106,7 @@ public class DataLoader implements CommandLineRunner {
         Vet vet2 = new Vet();
         vet2.setFirstName("Jessie");
         vet2.setLastName("Porter");
-        vet1.getSpecialities().add(savedSurgery);
+        vet2.getSpecialities().add(savedSurgery);
         vetService.save(vet2);
 
         System.out.println("Loaded Vets... ");
