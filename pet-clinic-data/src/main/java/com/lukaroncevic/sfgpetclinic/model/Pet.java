@@ -2,6 +2,7 @@ package com.lukaroncevic.sfgpetclinic.model;
 
 import jakarta.persistence.*;
 import lombok.*;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import java.time.LocalDate;
 import java.util.HashSet;
@@ -24,7 +25,7 @@ public class Pet extends BaseEntity{
         this.birthDate = birthDate;
         if (visits != null && visits.size() > 0){
             this.visits = visits;
-    }
+        }
     }
 
     @Column(name = "name")
@@ -37,6 +38,7 @@ public class Pet extends BaseEntity{
     private Owner owner;
 
     @Column(name = "birth_date")
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private LocalDate birthDate;
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "pet")
